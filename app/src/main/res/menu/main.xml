@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ricky.md.theme.MainActivity">
+
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="查找"
+         />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="101"
+        android:title="分享" />
+    <item
+        android:id="@+id/action_new"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="102"
+        android:title="添加" />
+
+</menu>
