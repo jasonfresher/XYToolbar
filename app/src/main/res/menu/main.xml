@@ -1,25 +1,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.ricky.md.theme.MainActivity">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/action_search"
+        android:icon="@mipmap/ic_search"
         android:orderInCategory="100"
-        app:showAsAction="always"
-        app:actionViewClass="android.support.v7.widget.SearchView"
         android:title="查找"
-         />
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
     <item
         android:id="@+id/action_share"
         android:icon="@android:drawable/ic_menu_share"
         android:orderInCategory="101"
-        android:title="分享" />
+        android:title="分享"
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_new"
         android:icon="@android:drawable/ic_menu_add"
         android:orderInCategory="102"
-        android:title="添加" />
+        android:title="添加"
+        app:showAsAction="never" />
 
 </menu>

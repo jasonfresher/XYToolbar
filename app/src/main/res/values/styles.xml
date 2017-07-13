@@ -12,8 +12,6 @@
 
 
     <style name="Theme.ToolBar.ZhiHu" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:textColor">@color/colorText</item>
         <!--把该属性改为false即可使menu位置位于toolbar之下-->
         <item name="overlapAnchor">false</item>
         <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>

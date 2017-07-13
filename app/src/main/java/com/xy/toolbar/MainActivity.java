@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
          * 设置关闭图标
          */
         searchClose = (ImageView) searchView.findViewById(R.id.search_close_btn);
-        searchClose.setImageResource(R.mipmap.ic_notifications);
+//        searchClose.setImageResource(R.mipmap.ic_notifications);
         /**
          * 设置输入框提示文本
          */
