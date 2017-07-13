@@ -1,9 +1,11 @@
 package com.xy.toolbar;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
@@ -36,10 +38,21 @@ public class MainActivity extends AppCompatActivity {
                 toolbar.setAlpha(alpha);
             }
         });
-
         TextInputLayout textInputLayout = (TextInputLayout) findViewById(R.id.textInputLayout);
         textInputLayout.setCounterEnabled(true);
         textInputLayout.setCounterMaxLength(10);
+
+    }
+
+
+    public void toTabLayout(View view){
+        Intent intent = new Intent(this,TabLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    public void toTranslucent(View view){
+        Intent intent = new Intent(this,TranslucentActivity.class);
+        startActivity(intent);
     }
 
 
@@ -61,9 +74,12 @@ public class MainActivity extends AppCompatActivity {
 //        searchGo.setImageResource(R.mipmap.ic_notifications);
 //        searchGo.setVisibility(View.VISIBLE);
 //        searchView.setSubmitButtonEnabled(true);
+
+        /**
+         * 设置关闭图标
+         */
         searchClose = (ImageView) searchView.findViewById(R.id.search_close_btn);
         searchClose.setImageResource(R.mipmap.ic_notifications);
-        searchClose.setVisibility(View.VISIBLE);
         /**
          * 设置输入框提示文本
          */
@@ -122,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_search) {
-            return true;
+        if (id == R.id.action_share) {
+            Log.d("jason","action_share");
         }
         return super.onOptionsItemSelected(item);
     }
