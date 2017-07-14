@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toTranslucent(View view){
-        Intent intent = new Intent(this,TranslucentActivity.class);
+        Intent intent = new Intent(this,TranslucentActivity2.class);
         startActivity(intent);
     }
 
